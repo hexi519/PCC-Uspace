@@ -5,7 +5,7 @@ OBJECTS = $(SOURCES:.cpp=.o)
 CCFLAGS += -fPIC
 
 %.o: %.cpp
-	$(CC) $(CCFLAGS) $< -c
+	$(CC) $(CCFLAGS) $(LDFLAGS) $< -c
 
 all: $(OBJECTS)
 

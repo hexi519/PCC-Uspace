@@ -37,7 +37,6 @@ void Options::Parse(int argc, char** argv) {
         Options::argv[i][len] = 0;
         strncpy(Options::argv[i], argv[i], len);
     }
-
 }
 
 const char* Options::Get(const char* str) {
